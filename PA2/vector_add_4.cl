@@ -5,5 +5,5 @@ __kernel void vectorAdd(__global const int *a, __global const int *b,
 
 
     int x = get_global_id(0);
-    if (x < size) {result[i] = a[i] + b[i] + c[i] + d[i];}
+    if (x < size) {result[i] = a[x] + b[x] + c[x] + d[x];}
 }
