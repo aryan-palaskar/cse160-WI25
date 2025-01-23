@@ -3,6 +3,6 @@ __kernel void vectorAdd(__global const int *a, __global const int *b,
   //@@ Insert code to implement vector addition here
 
     int x = get_global_id(0);
-    if (x < size) { result[i] = a[i] + b[i];}
+    if (x < size) { result[i] = a[x] + b[x];}
   
 }
